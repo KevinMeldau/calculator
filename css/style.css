@@ -6,6 +6,10 @@
   --black: #000000;
   --red: #ff2800;
   --orange: #ffbb00;
+  --dark-red: #e62503;
+  --dark-orange: #d89f02;
+  --blue: #0492c2;
+  --light-blue: #a2cfd4;
   --border: 2px solid white;
   --border-radius: 15px;
 
@@ -26,21 +30,19 @@ body {
   background: linear-gradient(30deg, var(--dark-grey), white);
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .container-bg {
   margin: 0 auto;
   background-color: white;
   width: 25vw;
-  /* height: 60vh; */
-  /* padding: 10px; */
-  margin-bottom: 10px;
 }
 
 .display {
   font-size: 2em;
   background-color: var(--dark-grey);
+  color: white;
   padding: 15px;
   margin: 10px;
   text-align: right;
@@ -56,6 +58,7 @@ body {
 
 .btn {
   font-family: var(--primary-font);
+  font-weight: 200;
   cursor: pointer;
   border: none;
   font-size: 2em;
@@ -63,7 +66,7 @@ body {
   padding: 15px;
 }
 
-.math-operators {
+.math-operators-container {
   margin: 0 auto;
   width: 25vw;
   display: grid;
@@ -71,6 +74,17 @@ body {
   padding: 10px;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+
+.btn-math-operators {
+  font-family: var(--primary-font);
+  background: linear-gradient(30deg, var(--blue), var(--light-blue));
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-size: 2em;
+  text-align: center;
+  padding: 15px;
 }
 
 .btn-bottom {
@@ -81,20 +95,7 @@ body {
   color: white;
 }
 
-/* .btn {
-  margin-left: 20px;
-  font-family: var(--primary-font);
-  background-color: var(--color-black-20);
+.btn:hover, .btn-bottom:hover, .btn-math-operators:hover {
+  background: black;
   color: white;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border: none;
-  padding: 15px 35px;
-  border: var(--border);
-  border-radius: var(--border-radius);
-} */
-
-/* .btn:hover {
-  border: 2px solid grey;
-  background-color: var(--color-black-40);
-} */
+}
