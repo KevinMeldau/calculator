@@ -3,9 +3,11 @@
 :root {
   --blue: #00558d;
   --light-blue: #b8d9dd;
-  --bg-white-75: rgba(255, 255, 255, .75);
-  --bg-white-90: rgba(255, 255, 255, .90);
-  --bg-black-75: rgba(0, 0, 0, .75);
+  --bg-white-40: rgba(255, 255, 255, 0.4);
+  --bg-white-75: rgba(255, 255, 255, 0.75);
+  --bg-white-90: rgba(255, 255, 255, 0.9);
+  --bg-black-30: rgba(0, 0, 0, 0.3);
+  --bg-black-75: rgba(0, 0, 0, 0.75);
   --border: 1px solid white;
 
   /* Font variables*/
@@ -72,4 +74,22 @@ body {
   color: white;
   font-size: 2.5rem;
   letter-spacing: 3px;
+}
+
+.calculator-grid > .operand-drk {
+  background-color: var(--bg-black-30);
+  color: white;
+}
+
+.calculator-grid > .operand-drk:hover {
+  color: var(--bg-black-75);
+}
+
+.calculator-grid > .operand-light {
+  background-color: var(--bg-white-40);
+  color: white;
+}
+
+.calculator-grid > .operand-light:hover {
+  color: var(--bg-black-75);
 }
